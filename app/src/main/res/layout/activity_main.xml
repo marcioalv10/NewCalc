@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvVisor"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:fontFamily="@font/sfuidisplayregular"
+        android:gravity="right|bottom"
+        android:paddingRight="20dp"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="65sp" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_margin="2dp">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btAC"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/button_lightgray"
+            android:fontFamily="@font/sfuidisplayregular"
+
+
+            android:text="@string/teclaAC"
+            android:textSize="34dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btMaisMenos"
+
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@+id/btAC"
+            android:background="@drawable/button_lightgray"
+            android:fontFamily="@font/sfuidisplayregular"
+
+            android:text="@string/tecla_mais_menos"
+            android:textSize="34dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btPorcentagem"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@+id/btMaisMenos"
+            android:background="@drawable/button_lightgray"
+
+            android:fontFamily="@font/sfuidisplayregular"
+            android:text="@string/teclaPercentual"
+            android:textSize="34dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btDivisao"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@+id/btPorcentagem"
+            android:background="@drawable/button_orange"
+            android:fontFamily="@font/sfuidisplayregular"
+            android:text="@string/teclaDivisao"
+
+            android:textColor="@color/white"
+            android:textSize="34dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_margin="2dp">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/bt7"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/button_gray"
+            android:fontFamily="@font/sfuidisplayregular"
+            android:text="@string/tecla7"
+
+
+            android:textColor="@color/white"
+            android:textSize="34dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/bt8"
+
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@+id/btAC"
+            android:background="@drawable/button_gray"
+            android:fontFamily="@font/sfuidisplayregular"
+            android:text="@string/tecla8"
+
+            android:textColor="@color/white"
+            android:textSize="34dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/bt9"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@+id/btMaisMenos"
+            android:background="@drawable/button_gray"
+            android:fontFamily="@font/sfuidisplayregular"
+
+            android:text="@string/tecla9"
+            android:textColor="@color/white"
+            android:textSize="34dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btMiltiplicacao"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@+id/btPorcentagem"
+            android:background="@drawable/button_orange"
+            android:fontFamily="@font/sfuidisplayregular"
+            android:text="@string/teclaMultiplicacao"
+
+            android:textColor="@color/white"
+            android:textSize="34dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_margin="2dp">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/bt4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/button_gray"
+            android:fontFamily="@font/sfuidisplayregular"
+            android:text="@string/tecla4"
+
+
+            android:textColor="@color/white"
+            android:textSize="34dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/bt5"
+
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@+id/btAC"
+            android:background="@drawable/button_gray"
+            android:fontFamily="@font/sfuidisplayregular"
+            android:text="@string/tecla5"
+
+            android:textColor="@color/white"
+            android:textSize="34dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/bt6"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@+id/btMaisMenos"
+            android:background="@drawable/button_gray"
+            android:fontFamily="@font/sfuidisplayregular"
+
+            android:text="@string/tecla6"
+            android:textColor="@color/white"
+            android:textSize="34dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btMenos"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@+id/btPorcentagem"
+            android:background="@drawable/button_orange"
+            android:fontFamily="@font/sfuidisplayregular"
+            android:text="@string/teclaMenos"
+
+            android:textColor="@color/white"
+            android:textSize="34dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_margin="2dp">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/button_gray"
+            android:fontFamily="@font/sfuidisplayregular"
+            android:text="@string/tecla1"
+            android:textColor="@color/white"
+            android:textSize="34dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/bt2"
+
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@+id/btAC"
+            android:background="@drawable/button_gray"
+            android:fontFamily="@font/sfuidisplayregular"
+            android:text="@string/tecla2"
+
+            android:textColor="@color/white"
+            android:textSize="34dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/bt3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@+id/btMaisMenos"
+            android:background="@drawable/button_gray"
+            android:fontFamily="@font/sfuidisplayregular"
+
+            android:text="@string/tecla3"
+            android:textColor="@color/white"
+            android:textSize="34dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btMais"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@+id/btPorcentagem"
+            android:background="@drawable/button_orange"
+            android:fontFamily="@font/sfuidisplayregular"
+            android:text="@string/teclaMais"
+
+            android:textColor="@color/white"
+            android:textSize="34dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_margin="2dp">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/bt0"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:layout_weight="7"
+            android:background="@drawable/button_gray"
+            android:fontFamily="@font/sfuidisplayregular"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="30dp"
+            android:text="@string/tecla0"
+            android:textColor="@color/white"
+            android:textSize="34dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btVrigula"
+
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@+id/btAC"
+            android:background="@drawable/button_gray"
+            android:fontFamily="@font/sfuidisplayregular"
+            android:text="@string/teclaVirgula"
+
+            android:textColor="@color/white"
+            android:textSize="34dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+        <Button
+            android:id="@+id/btCalcular"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@+id/btPorcentagem"
+            android:background="@drawable/button_orange"
+            android:fontFamily="@font/sfuidisplayregular"
+            android:text="@string/teclaIgual"
+
+            android:textColor="@color/white"
+            android:textSize="34dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

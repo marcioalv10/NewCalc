@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">New Calc</string>
+
+    <string name="tecla0">0</string>
+    <string name="tecla1">1</string>
+    <string name="tecla2">2</string>
+    <string name="tecla3">3</string>
+    <string name="tecla4">4</string>
+    <string name="tecla5">5</string>
+    <string name="tecla6">6</string>
+    <string name="tecla7">7</string>
+    <string name="tecla8">8</string>
+    <string name="tecla9">9</string>
+
+    <string name="teclaMais">+</string>
+    <string name="teclaMenos">-</string>
+    <string name="teclaMultiplicacao">X</string>
+    <string name="teclaDivisao">÷</string>
+    <string name="teclaPercentual">%</string>
+    <string name="teclaAC">AC</string>
+    <string name="tecla_mais_menos">+/-</string>
+
+    <string name="teclaVirgula">,</string>
+    <string name="teclaIgual">=</string>
+
+</resources>
