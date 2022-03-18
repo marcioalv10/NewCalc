@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         var sinal = ""
         var resultado = 0.0
         var fecha = 0
+        var mode = 1
 
         //Formata a saída do número com separador de milhar e casas decimais
         //var dec = DecimalFormat("#,##0.00")
@@ -221,6 +222,24 @@ class MainActivity : AppCompatActivity() {
                 tvVisor.text = ""
                 fecha = 0
             }
+
+        }
+
+        btAC.setOnLongClickListener {
+            when(mode){
+                1 -> {
+                    Toast.makeText(this, "modo Calculadora financeira ativado", Toast.LENGTH_SHORT).show()
+                    dec = DecimalFormat("#,##0.00")
+                    mode = 2
+                }
+                2 -> {
+                    Toast.makeText(this, "modo Calculadora padrão ativado", Toast.LENGTH_SHORT).show()
+                    dec = DecimalFormat("#,###.#######")
+                    mode = 1
+                }
+
+            }
+            return@setOnLongClickListener true
 
         }
 
