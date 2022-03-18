@@ -34,6 +34,7 @@ class MainActivity : AppCompatActivity() {
         val btMenos = findViewById<Button>(R.id.btMenos)
         val btMultiplicacao = findViewById<Button>(R.id.btMiltiplicacao)
         val btDivisao = findViewById<Button>(R.id.btDivisao)
+        val btPorcentagem = findViewById<Button>(R.id.btPorcentagem)
 
         val btCalcular = findViewById<Button>(R.id.btCalcular)
 
@@ -159,6 +160,21 @@ class MainActivity : AppCompatActivity() {
 
             valorStr = ""
             sinal = ":"
+        }
+
+
+        btPorcentagem.setOnClickListener {
+            if (sinal == "+" || sinal == "-") {
+                if (!valorStr.isEmpty()) {
+                    valorStr = ((valorStr.replace(",", ".").toDouble() / 100) * resultado).toString()
+                    tvVisor.text = dec.format(valorStr.toDouble())
+                }
+            } else {
+                if (!valorStr.isEmpty() && !tvVisor.text.equals("-")) {
+                    valorStr = ((valorStr.replace(",", ".").toDouble() / 100)).toString()
+                    tvVisor.text = dec.format(valorStr.toDouble())
+                }
+            }
         }
 
         btCalcular.setOnClickListener {
